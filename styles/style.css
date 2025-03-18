@@ -15,6 +15,9 @@
 .page {
   min-inline-size: 360px;
   margin: 0;
+  background-color: var(--bg-color, #f3efec);
+  color: var(--text-color, #312a4e);
+  font-family: var(--main-font, Raleway);
 }
 
 p,
@@ -27,4 +30,15 @@ ol,
 li,
 figure {
   margin: 0;
+}
+
+.heading {
+  font-family: var(--accent-font);
+  line-height: 0.9;
+  font-weight: 600;
+  text-align: center;
+}
+
+.content-section {
+  padding-inline: 5vi;
 }
