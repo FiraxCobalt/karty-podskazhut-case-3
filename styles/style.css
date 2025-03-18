@@ -68,3 +68,36 @@ figure {
 .content__paragraph a {
   color: currentColor;
 }
+
+.content__blockquote {
+  margin-inline: auto;
+  margin-block-end: 1.5em;
+  inline-size: 75%;
+  line-height: 2;
+  font-style: italic;
+}
+
+.content__list {
+  list-style: none;
+}
+
+.content__list .content__item:not(:last-of-type) {
+  margin-block-end: 10px;
+}
+
+.content__item {
+  position: relative;
+}
+
+.content__item::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  inset-block-start: 5px;
+  inset-inline-start: -25px;
+  inline-size: 15px;
+  block-size: 15px;
+  background-image: url(../images/marker-light.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
