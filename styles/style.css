@@ -79,6 +79,24 @@ figure {
   color: currentColor;
 }
 
+.content__figure {
+  margin-block: 7%;
+  inline-size: calc(100% + 10vi);
+  position: relative;
+  inset-inline-start: -5vi;
+}
+
+.content__picture {
+  display: block;
+  inline-size: 100%;
+}
+
+.content__picture-caption {
+  border-block-end: 1px solid currentColor;
+  padding-block: 20px;
+  text-align: center;
+}
+
 .content__blockquote {
   margin-inline: auto;
   margin-block-end: 1.5em;
