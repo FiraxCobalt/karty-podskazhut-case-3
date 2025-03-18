@@ -32,6 +32,10 @@ figure {
   margin: 0;
 }
 
+.header {
+  padding-block-start: 10%;
+}
+
 .heading {
   font-family: var(--accent-font);
   line-height: 0.9;
@@ -41,4 +45,14 @@ figure {
 
 .content-section {
   padding-inline: 5vi;
+}
+
+.header__title {
+  margin-block-end: 40px;
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+}
+
+.content__title {
+  font-size: 30px;
+  padding-block: 7% 2.5%;
 }
