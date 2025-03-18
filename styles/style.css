@@ -61,6 +61,16 @@ figure {
   font-size: 18px;
 }
 
+.content__text-block_type_first-lettered
+  .content__paragraph:first-of-type::first-letter {
+  display: inline-block;
+  margin-inline-end: 1px;
+  padding: 0 4px;
+  font-size: 30px;
+  font-weight: 700;
+  background-color: var(--accent-color);
+}
+
 .content__text-block .content__paragraph:not(:last-of-type) {
   margin-block-end: 1.5em;
 }
