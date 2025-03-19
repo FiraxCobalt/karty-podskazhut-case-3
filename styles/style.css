@@ -12,18 +12,18 @@
   --accent-font: "STIX two text";
 }
 
-:root .theme_dark {
-  --bg-color: #171717;
-  --text-color: #b3b3b3;
-  --accent-color: transparent;
-}
-
 .page {
   min-inline-size: 360px;
   margin: 0;
   background-color: var(--bg-color, #f3efec);
   color: var(--text-color, #312a4e);
   font-family: var(--main-font, Raleway);
+}
+
+.theme_dark {
+  --bg-color: #171717;
+  --text-color: #b3b3b3;
+  --accent-color: transparent;
 }
 
 p,
@@ -194,6 +194,7 @@ button:focus-visible {
 }
 
 .colored-text {
+  display: inline-block;
   position: relative;
 }
 
