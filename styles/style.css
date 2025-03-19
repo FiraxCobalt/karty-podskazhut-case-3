@@ -12,6 +12,12 @@
   --accent-font: "STIX two text";
 }
 
+:root .theme_dark {
+  --bg-color: #171717;
+  --text-color: #b3b3b3;
+  --accent-color: transparent;
+}
+
 .page {
   min-inline-size: 360px;
   margin: 0;
@@ -63,6 +69,7 @@ button:focus-visible {
 }
 
 .header__menu {
+  border-block: 1px solid currentColor;
   padding-block: 20px;
   display: flex;
   justify-content: space-between;
