@@ -105,6 +105,36 @@ figure {
   font-style: italic;
 }
 
+.content__card {
+  margin-block-start: 7%;
+  border: 1px solid currentColor;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__card-title {
+  font-size: 60px;
+}
+
+.colored-text {
+  position: relative;
+}
+
+.colored-text::after {
+  content: "";
+  display: inline-block;
+  inline-size: calc(100% + 8px);
+  block-size: 15px;
+  background-color: var(--accent-color);
+  position: absolute;
+  inset-block-end: 10px;
+  inset-inline-start: -4px;
+  z-index: -1;
+}
+
 .content__list {
   list-style: none;
 }
