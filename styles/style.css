@@ -32,6 +32,16 @@ figure {
   margin: 0;
 }
 
+a:focus,
+button:focus {
+  outline: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 1px solid var(--text-color);
+}
+
 .header {
   padding-block-start: 10%;
 }
@@ -92,6 +102,10 @@ figure {
   inset-block-end: 4px;
   inset-inline-start: -4px;
   z-index: -1;
+}
+
+.header__theme-button_is-active:disabled {
+  pointer-events: none;
 }
 
 .content__title {
