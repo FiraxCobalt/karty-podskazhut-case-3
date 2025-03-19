@@ -215,3 +215,14 @@ button:focus-visible {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.footer {
+  margin-block-start: 10%;
+  border-block-start: 1px solid currentColor;
+  padding: 2.5%;
+  text-align: center;
+}
+
+.footer__copyright {
+  text-transform: uppercase;
+}
