@@ -111,6 +111,10 @@ button:focus-visible {
   z-index: -1;
 }
 
+.theme_dark .header__theme-button_is-active::after {
+  background-image: url(../images/pattern.svg);
+}
+
 .header__theme-button_is-active:disabled {
   pointer-events: none;
 }
@@ -132,6 +136,13 @@ button:focus-visible {
   font-size: 30px;
   font-weight: 700;
   background-color: var(--accent-color);
+}
+
+.theme_dark
+  .content__text-block_type_first-lettered
+  .content__paragraph:first-of-type::first-letter {
+  margin-inline-end: 5px;
+  border: 1px solid currentColor;
 }
 
 .content__text-block .content__paragraph:not(:last-of-type) {
@@ -198,6 +209,10 @@ button:focus-visible {
   z-index: -1;
 }
 
+.theme_dark .colored-text::after {
+  background-image: url(../images/pattern.svg);
+}
+
 .content__list {
   list-style: none;
 }
@@ -221,6 +236,10 @@ button:focus-visible {
   background-image: url(../images/marker-light.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.theme_dark .content__item::before {
+  background-image: url(../images/marker-dark.svg);
 }
 
 .footer {
